@@ -456,7 +456,8 @@ a:active,a:focus {
 	text-align:center;
 }
 .site-title {
-	font-family:'Quattrocento Sans',sans-serif;
+	/*font-family:'Quattrocento Sans',sans-serif;*/
+	font-family: 'Oswald';
 	font-size:60px;
 	font-weight:300;
 	letter-spacing:2px;
@@ -466,11 +467,12 @@ a:active,a:focus {
 	text-transform:uppercase;
 }
 .site-title a {
+	font-family: 'Oswald';
+
 		text-decoration:none;
 }
 .site-description {
 	font-size:14px;
-	font-style:italic;
 	font-weight:300;
 	margin-top:-15px;
 	margin-bottom:35px;
@@ -2201,7 +2203,6 @@ h6 { font-size: 12px; }
 }
 .site-description {
 	font-size: 14px;
-	font-style: italic;
 	font-weight: 300;
 	letter-spacing: 0px;
 	text-align: center;
@@ -2615,4 +2616,49 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+}
+
+.container1 {
+  position: relative;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container1:hover .image1 {
+  opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+  opacity: 1;
+}
+
+.text1 {
+  font-size: 16px;
+  padding: 16px 32px;
+
+    background-color: #2196f3;
+    border-radius: 4px;
+    color: #fff;
 }
